@@ -13,7 +13,7 @@ class App < Sinatra::Base
     @consonants = params[:consonants]
     @most_common_letter = params[:most_common_letter]
     @used_times = params[:used_times]
-    @analyzed_text = TextAnalyzer.new(text_from_user)
+    @analyzed_text = TextAnalyzer.new(params[:user_text])
     # we can shorten this to @analyzed_text = TextAnalyzer.new(params[:user_text])
     erb :results
   end
