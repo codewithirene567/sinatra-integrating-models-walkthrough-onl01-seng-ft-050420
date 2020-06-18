@@ -7,6 +7,7 @@ class App < Sinatra::Base
   end
 
   post '/results' do
+    binding.pry
     @analyzed_text = TextAnalyzer.new(params[:user_text])
     # we can shorten this to @analyzed_text = TextAnalyzer.new(params[:user_text])
     erb :results
