@@ -6,7 +6,7 @@ class App < Sinatra::Base
     erb :index
   end
 
-  post '/' do
+  post '/results' do
     #text_from_user = params[:user_text]
     #@number_of_words = params[:number_of_words]
     #@vowels = params[:vowels]
