@@ -10,7 +10,12 @@ class App < Sinatra::Base
     text_from_user = params[:user_text]
 
     @analyzed_text = TextAnalyzer.new(text_from_user)
-
+    @your_text_analysis = params[:your_text_analysis]
+    @number_of_words = params[:number_of_words]
+    @vowels = params[:vowels]
+    @consonants = params[:consonants]
+    @most_common_letter = params[:most_common_letter]
+    @used_times = params[:used_times]
     # we can shorten this to @analyzed_text = TextAnalyzer.new(params[:user_text])
     erb :results
   end
