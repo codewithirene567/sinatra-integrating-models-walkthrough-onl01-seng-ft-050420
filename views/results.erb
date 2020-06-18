@@ -1,8 +1,8 @@
 <h1>Your Text Analysis</h1>
 
-<h2>Number of Words: <%=@number_of_words.count_of_words %></h2>
-<h2>Vowels: <%=@vowels.count_of_vowels %></h2>
+<h2>Number of Words: <%=@analyzed_text.count_of_words %></h2>
+<h2>Vowels: <%=@analyzed_text.count_of_vowels %></h2>
 
-<h2>Consonants: <%=@consonants.count_of_consonants %></h2>
+<h2>Consonants: <%=@analyzed_text.count_of_consonants %></h2>
 
 <h2>Most Common Letter: _<%=@analyzed_text.most_used_letter.keys[0].upcase %>____ used __<%=@analyzed_text.most_used_letter.values[0]%>___ times</h2>
