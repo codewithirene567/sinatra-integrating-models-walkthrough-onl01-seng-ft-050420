@@ -8,9 +8,6 @@ class App < Sinatra::Base
 
   post '/' do
     text_from_user = params[:user_text]
-
-
-    @your_text_analysis = params[:your_text_analysis]
     @number_of_words = params[:number_of_words]
     @vowels = params[:vowels]
     @consonants = params[:consonants]
