@@ -1,9 +1,16 @@
 <h1>Your Text Analysis</h1>
 
-<h2>Number of Words: </h2>
-<%@ %>
+<h2>Number of Words: <%=@number_of_words %></h2>
 <h2>Vowels: </h2>
 
 <h2>Consonants: </h2>
 
 <h2>Most Common Letter: _____ used _____ times</h2>
+
+@analyzed_text = TextAnalyzer.new(text_from_user)
+@your_text_analysis = params[:your_text_analysis]
+@number_of_words = params[:number_of_words]
+@vowels = params[:vowels]
+@consonants = params[:consonants]
+@most_common_letter = params[:most_common_letter]
+@used_times = params[:used_times]
