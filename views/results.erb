@@ -5,7 +5,7 @@
 
 <h2>Consonants: <%=@consonants %></h2>
 
-<h2>Most Common Letter: _<%=@most_common_letter %>____ used __<%=@used_times %>___ times</h2>
+<h2>Most Common Letter: _<%=@most_common_letter %>____ used __<%=@used_times%>___ times</h2>
 
 @analyzed_text = TextAnalyzer.new(text_from_user)
 @your_text_analysis = params[:your_text_analysis]
