@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end
 
   post '/' do
-    text_from_user = params[:user_text]
+    
     @number_of_words = params[:number_of_words]
     @vowels = params[:vowels]
     @consonants = params[:consonants]
